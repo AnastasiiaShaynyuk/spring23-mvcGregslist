@@ -20,7 +20,8 @@ class AppState extends EventEmitter {
 
   /** @type {import('./Models/House').House[]} */
   houses = [
-    new House({ color: '#fff' }), new House({ color: '#000' })
+    new House('1974', 'Mid-Century Modern Single Family Home', 3, 2.5, 1400, 375000, 'Newly renovated mid-century modern home', 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'),
+    new House('2022', 'Beautiful Brand New Single Family Home', 4, 3, 2000, 550000, 'Just builded great home with ')
   ]
 
   // NOTE super weird type case as an example
