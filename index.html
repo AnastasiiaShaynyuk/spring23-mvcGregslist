@@ -31,37 +31,41 @@
     <div class="container-fluid">
       <!-- SECTION car form -->
       <section class="row justify-content-center">
-        <div id="form" class="col-12 col-md-8">
-          <!-- NOTE label labels the input, for points to the input's id so they are tied, name makes the input grab-able in js -->
+        <div id="form" class="col-12 col-md-8 py-3 px-5">
+        <!-- <div id="form1" class="col-12 col-md-8 py-3 px-5"> -->
+
+        <!-- NOTE label labels the input, for points to the input's id so they are tied, name makes the input grab-able in js -->
 
           <!-- <form onsubmit="app.carsController.createCar()" class="row bg-white rounded elevation-2 p-4">
-            <h3>List a Car</h3>
-            <div class="mb-2 col-4">
-              <label for="make">Make</label>
-              <input type="text" name="make" id="make" class="form-control">
-            </div>
-            <div class="mb-2 col-4">
-              <label for="model">Model</label>
-              <input type="text" name="model" id="model" class="form-control" required minlength="3" maxlength="10"
-                placeholder="Toyota">
-            </div>
-            <div class="mb-2 col-4">
-              <label for="year">Year</label>
-              <input type="number" name="year" id="year" class="form-control" required min="2020" max="3000"
-                value="2023">
-            </div>
+            <h3>List your House!</h3>
             <div class="mb-2 col-12">
-              <label for="img">Image URL</label>
-              <input type="url" name="img" id="img" class="form-control" required
-                placeholder="please enter a url for an image...">
+              <label for="name">Name</label>
+              <input type="text" name="name" id="name" class="form-control">
+            </div>
+            <div class="mb-2 col-3">
+              <label for="year">Year</label>
+              <input type="number" name="year" id="year" class="form-control" required min="1950" max="3000">
+            </div>
+            <div class="mb-2 col-3">
+              <label for="bedrooms">Bedrooms</label>
+              <input type="number" name="bedrooms" id="bedrooms" class="form-control" required min="1" max="100">
+            </div>
+            <div class="mb-2 col-3">
+              <label for="bathrooms">Bathrooms</label>
+              <input type="number" name="bathrooms" id="bathrooms" class="form-control" required min="1" max="100">
+            </div>
+            <div class="mb-2 col-3">
+              <label for="sqft">Sqft</label>
+              <input type="number" name="sqft" id="sqft" class="form-control" required min="1" max="5000">
             </div>
             <div class="mb-2 col-12">
               <label for="description">Description</label>
-              <input type="text" name="description" id="description" class="form-control" maxlength="50">
+              <input type="text" name="description" id="description" class="form-control" maxlength="1000">
             </div>
             <div class="mb-2 col-6">
-              <label for="color">Color</label>
-              <input type="color" name="color" id="color" class="form-control" required value="#4747ff">
+              <label for="img">Image URL</label>
+              <input type="url" name="img" id="img" class="form-control" required
+                placeholder="please enter a url for an image...">
             </div>
             <div class="mb-2 col-6">
               <label for="price">Price</label>
@@ -78,19 +82,20 @@
       </section>
 
       <!-- SECTION car listings -->
-      <section id="listings" class="row g-2">
+      <section id="listings" class="row justify-content-center justify-content-md-evenly g-2">
+        <!-- <section id="list" class="row g-2"> -->
 
         <!-- car tempalte -->
-        <!-- <div class="col-6 col-md-4">
+        <!-- <div class="col-12 col-md-4 p-4">
           <div class="card elevation-2">
             <img
-              src="https://www.cnet.com/a/img/resize/d028f516616211e789c534381db4ddcb742a3f0b/hub/2019/03/06/a84a4a02-09a1-4616-809d-3ca4c63fede1/subaru-viziv-adrenaline-concept-geneva-2019.jpg?auto=webp&fit=crop&height=675&width=1200"
-              alt="">
+              src="https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
+              alt="House">
             <div class="p-2">
-              <h5 class="text-center border-bottom border-dark">Subaru | Tsunami | 2027</h5>
-              <div>color goes here</div>
+              <h4 class="text-center border-bottom border-dark">Mid-Century Modern Single Family Home</h4>
+              <h5 class="text-center border-bottom border-dark">1974 | 3 brs, 2.5 ba | 1400 sqrf</h5>
               <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam obcaecati!</p>
-              <p class="text-end">🤡🍔27</p>
+              <p class="text-end"> <span class="text-center border rounded border-dark p-2">$375000</span> </p>
             </div>
           </div>
         </div> -->

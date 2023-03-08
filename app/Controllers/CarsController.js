@@ -21,7 +21,7 @@ function _drawCarForm() {
 // SECTION Public 
 export class CarsController {
   constructor() {
-    console.log('cars loaded', appState.cars);
+    // console.log('cars loaded', appState.cars);
     _drawCars()
     appState.on('cars', _drawCars) // listen to the key 'cars' on appstate, and run _drawCars when it changes
     // console.log(Object.keys(localStorage))

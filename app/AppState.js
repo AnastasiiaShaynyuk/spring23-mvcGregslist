@@ -19,10 +19,12 @@ class AppState extends EventEmitter {
   cars = loadState('cars', [Car])
 
   /** @type {import('./Models/House').House[]} */
-  houses = [
-    new House('1974', 'Mid-Century Modern Single Family Home', 3, 2.5, 1400, 375000, 'Newly renovated mid-century modern home', 'https://rew-feed-images.global.ssl.fastly.net/imls/_cloud_media/property/residentialincome/98862307-1-835976ecc96808a93ea194115ae6c537-m.jpg'),
-    new House('2022', 'Beautiful Brand New Single Family Home', 4, 3, 2000, 550000, 'Just builded amazing home with great view', 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80')
-  ]
+  // houses = [
+  //   new House({name: 'Mid-Century Modern Single Family Home', year: '1974', bedrooms: 3, bathrooms: 2.5, sqft: 1400, price: 375000, description: 'Newly renovated mid-century modern home, ipsum dolor sit amet consectetur adipisicing elit, ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam obcaecati!. Soluta, aperiam obcaecati!', imgUrl: 'https://images.unsplash.com/photo-1570129477492-45c003edd2be?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8aG91c2V8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60'}),
+  //   new House({name: 'Beautiful Brand New Single Family Home', year: '2022',  bedrooms: 4, bathrooms: 3, sqft: 2000, price: 550000, description: 'Just builded amazing home with great view, ipsum dolor sit amet consectetur adipisicing elit, ipsum dolor sit amet consectetur adipisicing elit. Soluta, aperiam obcaecati!. Soluta, aperiam obcaecati!', imgUrl: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1175&q=80'})
+  // ]
+
+  houses = loadState('houses', [House])
 
   // NOTE super weird type case as an example
   /** @type {[Number, String, Number]} */
